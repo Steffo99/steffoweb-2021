@@ -1,0 +1,40 @@
+body
+{
+	font-family: 'Ubuntu';
+	background-color: #ff7f00;
+	color: #783f04;
+}
+
+a
+{
+	color: #0000ff;
+}
+
+.box
+{
+	background-color: #fce5cd;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+.gold
+{
+	background-color: #ffff00;
+	color: #7f6000;
+	font-size: 20px;
+}
+
+.silver
+{
+	background-color: #d9d9d9;
+	color: #434343;
+	font-size: 15px;
+}
+
+.bronze
+{
+	background-color: #f6b26b;
+	color: #783f04;
+	font-size: 12px;
+}
