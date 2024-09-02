@@ -266,23 +266,23 @@ export default function RootPage() {
                     />
                     <LinkPanel
                         icon={faGlobe}
-                        text={"Ichicoro"}
-                        href={"https://marte.dev/"}
-                        description={"marte.dev"}
+                        text={"Zelda"}
+                        href={"https://zelda.sh/"}
+                        description={"zelda.sh"}
                     />
                 </div>
                 <div className={"group-lp"}>
                     <LinkPanel
                         icon={faGlobe}
                         text={"Malbyx"}
-                        href={"https://malbyx.eu/it"}
+                        href={"https://about.malbyx.eu/it"}
                         description={"malbyx.eu"}
                     />
                     <LinkPanel
                         icon={faGlobe}
                         text={"Nemesis"}
-                        href={"https://www.fermitech.info/"}
-                        description={"fermitech.info"}
+                        href={"https://www.fermitech.dev/"}
+                        description={"fermitech.dev"}
                     />
                 </div>
                 <div className={"group-lp"}>
