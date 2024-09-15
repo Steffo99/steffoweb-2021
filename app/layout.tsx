@@ -2,7 +2,7 @@ import Image from "next/image"
 import {default as Link} from "next/link"
 import React, {ReactNode} from "react"
 import { config as fontawesomeConfig } from '@fortawesome/fontawesome-svg-core'
-import {default as imgSRound} from "../public/s-round.png"
+import {default as imgSRound} from "../public/avatar.svg"
 
 import '@steffo/bluelib/dist/base.root.css'
 import '@steffo/bluelib/dist/layouts-center.root.css'

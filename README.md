@@ -1,21 +1,13 @@
-# ![Steffoweb](public/opengraph.png)
+<div align="center">
 
-My personal website in [React](https://reactjs.org/).
+<img src="public/avatar.svg" width="128" height="128" alt="" style="border-radius: 100%;">
 
-## Developing
+# Steffoweb
 
-### Running a local copy
+</div>
 
-If for whatever reason you want to run a local copy of the website, ensure [the latest `nodejs`](https://nodejs.org/it/) and `yarn` are installed on your 
-machine, then run:
+My personal website
 
-```bash
-git clone https://github.com/Steffo99/steffoweb.git
-cd "steffoweb"
-yarn
-yarn run dev
-```
+## Links
 
-### Updating the website
-
-The website will automatically update based on the `next` branch.
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.steffo.eu%2F)](https://www.steffo.eu/)

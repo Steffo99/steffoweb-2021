@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   version="1.1"
+   viewBox="0 0 512 512"
+   id="svg4"
+   sodipodi:docname="avatar.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.82324218"
+     inkscape:cx="218.64769"
+     inkscape:cy="271.48755"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="background"
+       x2="512"
+       y1="512"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#051436"
+         offset="0"
+         id="stop1" />
+      <stop
+         stop-color="#001553"
+         offset=".75"
+         id="stop2" />
+      <stop
+         stop-color="#010a4e"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <filter
+       id="shadow"
+       x="-0.13011152"
+       y="-0.082530949"
+       width="1.2416357"
+       height="1.1925722"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-color="rgb(1,8,40)"
+         in="SourceGraphic"
+         result="flood"
+         id="feFlood3" />
+      <feGaussianBlur
+         in="SourceGraphic"
+         result="blur"
+         stdDeviation="10.000000"
+         id="feGaussianBlur3" />
+      <feOffset
+         dx="-4.000000"
+         dy="8.000000"
+         in="blur"
+         result="offset"
+         id="feOffset3" />
+      <feComposite
+         in="flood"
+         in2="offset"
+         operator="in"
+         result="comp1"
+         id="feComposite3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="comp1"
+         result="comp2"
+         id="feComposite4" />
+    </filter>
+  </defs>
+  <rect
+     width="512"
+     height="512"
+     fill="url(#background)"
+     id="rect4"
+     x="0"
+     y="0"
+     style="fill:url(#background)" />
+  <text
+     x="144.8"
+     y="394.60001"
+     fill="#85c4ff"
+     filter="url(#shadow)"
+     font-family="'Fira Sans'"
+     font-size="400px"
+     font-weight="bold"
+     stroke-width="1.0016"
+     xml:space="preserve"
+     id="text4"><tspan
+       x="144.8"
+       y="394.60001"
+       fill="#85c4ff"
+       id="tspan4">S</tspan></text>
+</svg>
