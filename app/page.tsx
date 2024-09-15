@@ -1,7 +1,7 @@
 "use client";
 
-import {faDiscord, faGithub, faItchIo, faLinkedin, faStackOverflow, faSteam} from "@fortawesome/free-brands-svg-icons"
-import {faArrowLeft, faBookAtlas, faBorderAll, faCashRegister, faCircleNodes, faCog, faDiagramProject, faEnvelope, faFloppyDisk, faGamepad, faGlobe, faPaintbrush, faPaintRoller, faPlus, faScissors, faShield, faShieldAlt} from "@fortawesome/free-solid-svg-icons"
+import {faDiscord, faGithub, faItchIo, faLinkedin, faGitAlt, faSteam} from "@fortawesome/free-brands-svg-icons"
+import {faArrowLeft, faBookAtlas, faBorderAll, faCashRegister, faCircleNodes, faCog, faDiagramProject, faEnvelope, faStar, faGamepad, faGlobe, faPaintbrush, faPaintRoller, faPlus, faFire, faShield, faShieldAlt} from "@fortawesome/free-solid-svg-icons"
 import {default as Link} from "next/link"
 import {useRouter} from "next/navigation"
 import React from "react"
@@ -29,7 +29,7 @@ export default function RootPage() {
                 </p>
                 <hr/>
                 <p>
-                    I'm interested in improving the interactions between people via technology.
+                    I like connecting people via technology!
                 </p>
                 <p>
                     For that reason, I enjoy using, exploring, studying and developing:
@@ -41,7 +41,10 @@ export default function RootPage() {
                     <li>chat bots and integrations.</li>
                 </ul>
                 <p>
-                    I'm also an advocate of the <a href={"https://fsfe.org/freesoftware/freesoftware.en.html"}>free software movement</a>, and try to release everything I make under a free software license.
+                    I'm also a supporter of the <a href={"https://fsfe.org/freesoftware/freesoftware.en.html"}>free software movement</a>, and try to release everything I make under <a href={"https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12"}>a free software license</a>.
+                </p>
+                <p>
+                    I hope to see you around the Internet, just like how you've stumbled on my homepage here!
                 </p>
             </section>
         </div>
@@ -55,9 +58,6 @@ export default function RootPage() {
                     <p>
                         Often, while experimenting with a new technology, I notice something that can be improved, and I try to come up with a solution to it.
                     </p>
-                    <p>
-                        Over time, I've created lots of small projects, some which have succeeded in their goal, and some which have unfortunately failed <small>(or have been abandoned due to a lack of time)</small>.
-                    </p>
                     <hr className={"float-bottom"}/>
                     <p>
                         Here's a small sample of what I've worked on:
@@ -70,9 +70,9 @@ export default function RootPage() {
                             description={"Customizable web stylesheet"}
                         />
                         <LinkPanel
-                            href={"https://steffo.itch.io/swear-jar"}
+                            href={"https://steffo.itch.io/hella-farm"}
                             icon={faGamepad}
-                            text={"Swear Jar"}
+                            text={"Hella Farm"}
                             description={"Game jam prototype"}
                         />
                     </div>
@@ -106,16 +106,16 @@ export default function RootPage() {
                     </div>
                     <div className={"group-lp"}>
                         <LinkPanel
-                            href={"https://github.com/Steffo99/backup-duplicity"}
-                            icon={faFloppyDisk}
-                            text={"backup-duplicity"}
-                            description={"Pluggable Docker-based backups"}
+                            href={"https://stars.steffo.eu/"}
+                            icon={faStar}
+                            text={"Peafowl"}
+                            description={"Static website for reviews"}
                         />
                         <LinkPanel
-                            href={"https://github.com/Steffo99/actions-semver"}
-                            icon={faScissors}
-                            text={"actions-semver"}
-                            description={"GH Action for semver parsing"}
+                            href={"https://glassflame.github.io/"}
+                            icon={faFire}
+                            text={"Glassflame"}
+                            description={"Obsidian vault web viewer"}
                         />
                     </div>
                     <hr/>
@@ -190,10 +190,10 @@ export default function RootPage() {
                         me
                     />
                     <LinkPanel
-                        href={"https://stackoverflow.com/users/4334568/steffo"}
-                        icon={faStackOverflow}
-                        text={"Stack Overflow"}
-                        description={"Steffo"}
+                        href={"https://forge.steffo.eu/steffo"}
+                        icon={faGitAlt}
+                        text={"Forgejo"}
+                        description={"steffo"}
                         me
                     />
                 </div>
@@ -251,7 +251,7 @@ export default function RootPage() {
                     My friends
                 </h3>
                 <p>
-                    I think that everyone should have their personal website, and to encourage that, I list the website of all my friends here, so that other people may see them!
+                    I think that everyone should have their personal website, and to encourage that, I list the website of all my IRL friends here, so that other people may see them!
                 </p>
                 <hr className={"float-bottom"}/>
                 <p>
