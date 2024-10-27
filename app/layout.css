@@ -1,0 +1,141 @@
+@property --c-bg0 {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #E9ECF7;
+}
+
+@property --c-bg1 {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #C7D7FA;
+}
+
+@property --c-bg2 {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #96B5F8;
+}
+
+@property --c-bg3 {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #6A95F0;
+}
+
+@property --c-bg4 {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #4176E6;
+}
+
+@property --c-fg {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #00080F;
+}
+
+@property --c-ac {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #0068CC;
+}
+
+@property --c-li {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #0A5C5C;
+}
+
+@property --e-shadow {
+	syntax: "<length> <length> <length> <color>";
+	inherits: true;
+	initial-value: -4px 8px 8px hsl(229, 95%, 8%, 30%);
+}
+
+@property --l-padding {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 8px;
+}
+
+@property --l-radius {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 8px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--c-bg0: #090D18;
+		--c-bg1: #051436;
+		--c-bg2: #0C1F4B;
+		--c-bg3: #152A5B;
+		--c-bg4: #213769;
+		--c-fg: #F0F7FF;
+		--c-ac: #85C3FF;
+		--c-li: #00FFFF;
+		--e-sh: -4px 8px 8px hsl(229, 95%, 8%, 30%);
+	}
+}
+
+body {
+	background-color: var(--c-bg0);
+	color: var(--c-fg);
+
+	font-family: var(--f-fira-sans), sans-serif;
+}
+
+a {
+	color: var(--c-li);
+}
+
+.panel {
+	--c-panel-bg: var(--c-bg1);
+}
+
+.panel .panel {
+	--c-panel-bg: var(--c-bg2);
+}
+
+.panel .panel .panel {
+	--c-panel-bg: var(--c-bg3);
+}
+
+.panel .panel .panel .panel {
+	--c-panel-bg: var(--c-bg4);
+}
+
+.panel {
+	background-color: var(--c-panel-bg);
+	box-shadow: var(--e-shadow);
+	padding: var(--l-padding);
+	border-radius: var(--l-radius);
+}
+
+a .panel {
+	background-color: color-mix(in srgb, var(--c-li) 15%, var(--c-panel-bg));
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+
+	gap: calc(var(--l-padding) * 2);
+	margin: 0;
+	padding: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+
+	gap: var(--l-padding);
+}

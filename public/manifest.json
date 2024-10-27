@@ -1,13 +1,7 @@
 {
-  "short_name": "Steffoweb",
+  "short_name": "Steffo",
   "name": "Steffo's website",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "2048x2048",
-      "type": "image/x-icon"
-    }
-  ],
+  "icons": [],
   "start_url": ".",
   "display": "browser",
   "theme_color": "#0d193b",

@@ -1,52 +1,88 @@
-import Image from "next/image"
-import {default as Link} from "next/link"
-import React, {ReactNode} from "react"
-import { config as fontawesomeConfig } from '@fortawesome/fontawesome-svg-core'
-import {default as imgSRound} from "../public/avatar.svg"
+import React, { ReactNode } from "react"
+import { Fira_Sans as FiraSans, Zilla_Slab as ZillaSlab, Source_Serif_4 as SourceSerif } from 'next/font/google'
+import { config as faConfig } from "@fortawesome/fontawesome-svg-core"
 
-import '@steffo/bluelib/dist/base.root.css'
-import '@steffo/bluelib/dist/layouts-center.root.css'
-import '@steffo/bluelib/dist/layouts-flex.root.css'
-import '@steffo/bluelib/dist/classic.root.css'
-import '@steffo/bluelib/dist/glass.root.css'
-import '@steffo/bluelib/dist/colors-royalblue.root.css'
-import '@steffo/bluelib/dist/fonts-fira-ghpages.root.css'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import "../public/style.css"
+faConfig.autoAddCss = false
 
-fontawesomeConfig.autoAddCss = false
+const firaSans = FiraSans({
+	weight: ["400", "700"],
+	subsets: ["latin"],
+	variable: "--f-fira-sans",
+	display: "swap",
+})
+
+const zillaSlab = ZillaSlab({
+	weight: ["700"],
+	subsets: ["latin"],
+	variable: "--f-zilla-slab",
+	display: "swap",
+})
+
+const sourceSerif = SourceSerif({
+	weight: ["400"],
+	subsets: ["latin"],
+	variable: "--f-source-serif",
+	display: "swap",
+})
+
+import "./layout.css"
+import classNames from "classnames"
+
 
 export type LayoutProps = {
-    children: ReactNode,
+	children: ReactNode,
 }
 
 export default function RootLayout({children}: LayoutProps) {
-    return <>
-        <html lang={"en"}>
-            <head>
-                <title>Steffo</title>
-            </head>
-            <body className={"layout-center"}>
-                <h1>
-                    <Image
-                        alt={""}
-                        src={imgSRound}
-                        width={48}
-                        height={48}
-                        style={{
-                            display: "inline-block",
-                            verticalAlign: "text-bottom",
-                        }}
-                    />
-                    Steffo
-                </h1>
-                <main>
-                    {children}
-                </main>
-                <footer>
-                    © {new Date().getFullYear()} Stefano Pigozzi | <Link href={"https://github.com/Steffo99/steffoweb"}>Source code</Link>
-                </footer>
-            </body>
-        </html>
-    </>
+	return <>
+		{/* TODO: Set the lang attribute */}
+		<html lang="" className={classNames(
+			firaSans.variable,
+			zillaSlab.variable,
+			sourceSerif.variable,
+		)}>
+			<head>
+				<title>Steffo</title>
+			</head>
+			<body>
+				<header>
+					<h1>
+						<a>
+							<span>
+								Steffo
+							</span>
+						</a>
+						<small>
+							{" is "}
+						</small>
+						<a>
+							<small>
+								working
+							</small>
+						</a>
+					</h1>
+				</header>
+				<nav>
+					<a>
+						<div className="panel">
+							AAAAaa
+						</div>
+					</a>
+					<a>
+						<div className="panel">
+							BBBBbb
+						</div>
+					</a>
+					<a>
+						<div className="panel">
+							CCCCcc
+						</div>
+					</a>
+				</nav>
+				<main>
+					{children}
+				</main>
+			</body>
+		</html>
+	</>
 }
